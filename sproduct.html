@@ -9,31 +9,30 @@
       src="https://kit.fontawesome.com/323f6020a6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="main-container">
       <!-- Header -->
-      <header>
-        <div class="logo">
-          <a href="#">
-            <img
-              src="https://i.postimg.cc/9Qn1bsb2/logo.png"
-              alt="vogueish-logo"
-          /></a>
-        </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a class="active" href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <section id="header">
+        <a href="#">
+          <img
+            src="https://i.postimg.cc/9Qn1bsb2/logo.png"
+            class="logo" alt="vogueish-logo"
+        /></a>
+      <div>
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
       <!-- Main section -->
       <main>
@@ -88,7 +87,9 @@
               <option>Large</option>
             </select>
             <input type="number" value="1" />
-            <button>Add To Cart</button>
+            <form action="cart.html">
+              <button type="submit" class="normal">Add To Cart</button>
+            </form>
             <h4>Product details</h4>
             <span
               >Mini dress with open shoulders and ruffles is delicate and
@@ -104,17 +105,16 @@
         </section>
 
         <!-- Featured Product Section -->
-        <section id="featured-product">
+        <section id="gallery-one">
           <h2>Featured Products</h2>
           <p>Women's collection from SHONDA. New, modern and vogueish</p>
-          <div class="pro">
-            <div>
+          <div class="pro-container">
+            <div class="pro">
               <img
                 src="https://i.pinimg.com/736x/fe/9a/89/fe9a8994dbd66b7e64393713dd29a0eb.jpg"
                 alt="featured-product"
               />
-            </div>
-            <div class="des">
+             <div class="des">
               <span>SHONDA</span>
               <h5>Men's knit polo</h5>
               <div class="star">
@@ -128,20 +128,14 @@
               <div class="cart">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
-            </div>
-            <div class="pro">
-              <img
-                src="https://i.pinimg.com/564x/ae/e8/6d/aee86d1760f75491bb38cc6a2f5d8827.jpg"
-                alt="featured-product"
-              />
+             </div>
             </div>
             <div class="pro">
               <img
                 src="https://i.pinimg.com/736x/d7/14/95/d7149561a90c3b920dffe0beabd025a7.jpg"
                 alt="featured-product"
               />
-            </div>
-            <div class="des">
+             <div class="des">
               <span>SHONDA</span>
               <h5>
                 Men's contrast colored embroided button up short sleeved shirt
@@ -158,14 +152,14 @@
               <div class="cart">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
+             </div>
             </div>
             <div class="pro">
               <img
                 src="https://i.pinimg.com/736x/e1/ef/ae/e1efaeee35955566c10185d5d098d5fd.jpg"
                 alt="featured-product"
               />
-            </div>
-            <div class="des">
+             <div class="des">
               <span>SHONDA</span>
               <h5>High Waist Flap Pocket Cargo Jeans</h5>
               <div class="star">
@@ -179,12 +173,34 @@
               <div class="cart">
                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
               </div>
+             </div>
+            </div>
+            <div class="pro">
+              <img
+                src="https://i.pinimg.com/564x/ae/e8/6d/aee86d1760f75491bb38cc6a2f5d8827.jpg"
+                alt="featured-product"
+              />
+             <div class="des">
+              <span>SHONDA</span>
+              <h5>Women's Sweater Maxi Dress in Cognac Brown</h5>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4>$50</h4>
+              <div class="cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+             </div>
             </div>
           </div>
         </section>
 
         <!-- Contact / Newletter Section -->
-        <section id="newsletter">
+        <section id="newsletter" class="section-p1 section-m1">
           <div>
             <h4>Sign Up For Newsletters</h4>
             <p>
@@ -193,8 +209,8 @@
             </p>
           </div>
           <div id="form">
-            <input type="text" placeholder="Your email adress" />
-            <button>Subscribe</button>
+            <input type="text" placeholder="Your email address" />
+            <button class="normal">Subscribe</button>
           </div>
         </section>
 
@@ -270,6 +286,6 @@
           };
         </script>
       </main>
-    </div>
+    </div><script src="script.js"></script>
   </body>
 </html>

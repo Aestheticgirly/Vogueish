@@ -9,36 +9,35 @@
       src="https://kit.fontawesome.com/323f6020a6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main-container">
         <!-- Header -->
-        <header>
-          <div class="logo">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/9Qn1bsb2/logo.png"
-                alt="vogueish-logo"
-            /></a>
-          </div>
-          <nav class="nav">
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a class="active" href="blog.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li>
-                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <section id="header">
+          <a href="#">
+            <img
+              src="https://i.postimg.cc/9Qn1bsb2/logo.png"
+              class="logo" alt="vogueish-logo"
+          /></a>
+        <div>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
   
         <!-- Main section -->
         <main>
           <!-- Hero -->
-          <section id="page-hero" class="blog-hero">
+          <section id="blog-hero">
             <h2>#ReadMore</h2>
             <p>Fashion Everything</p>
           </section>
@@ -53,8 +52,8 @@
                     <h4>Styling For Work This Summer</h4>
                     <p>A formal suit this summer would be highly overrated. To style properly for work this summer you also need to consider your choice of...</p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>05/07</h1>
                 </div>
+                <h1>05/07</h1>
             </div>
             <div class="blog-box">
                 <div class="blog-img">
@@ -64,8 +63,8 @@
                     <h4>Make-up And Accessories</h4>
                     <p>Every lady out there loves looking good but most especially loves her make-up and accessoris, but the question is do you know how to accessorise and make-up for each weather?...</p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>28/06</h1>
                 </div>
+                <h1>28/06</h1>
             </div>
             <div class="blog-box">
                 <div class="blog-img">
@@ -75,8 +74,8 @@
                     <h4>Choosing Your Aesthetic</h4>
                     <p>To style properly you need to have an idea of what your aesthetic is. Your aesthetic will totally define your lifestyle but most especially your wardrobe so you're not a mess of flying clothes evrytime you need to head out for...</p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>21/06</h1>
                 </div>
+                <h1>21/06</h1>
             </div>
             <div class="blog-box">
                 <div class="blog-img">
@@ -86,8 +85,8 @@
                     <h4>Top 10 Sport Ideas This Summer</h4>
                     <p>In as much as we dress up to look nice we also need to sport to look nice. In this edition of our blog post we bring to you our tp 10 sport ideas this summer... </p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>14/06</h1>
                 </div>
+                <h1>14/06</h1>
             </div>
             <div class="blog-box">
                 <div class="blog-img">
@@ -97,8 +96,8 @@
                     <h4>The Fashion Industry- Recycling Or New Ideas</h4>
                     <p>We have noticed a recent turn in the fashion industry recently that has mad us question the new designs and their authenticity, are they simply reusing ideas from the 19th Century or...</p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>7/06</h1>
                 </div>
+                <h1>7/06</h1>
             </div>
             <div class="blog-box">
                 <div class="blog-img">
@@ -108,8 +107,8 @@
                     <h4>Diet As An Effect On Fashion And LIfestyle</h4>
                     <p>An often disregarded topic such as diet has rather been proven to be a very important one. Fashion isn't all about stling clothes, hair-do, accessories and make-up, it also...</p>
                     <a href="#">CONTINUE READING</a>
-                    <h1>7/06</h1>
                 </div>
+                <h1>7/06</h1>
             </div>
           </section>
 
@@ -121,7 +120,7 @@
        </section>
 
           <!-- Contact / Newletter Section -->
-          <section id="newsletter">
+          <section id="newsletter" class="section-p1 section-m1">
             <div>
               <h4>Sign Up For Newsletters</h4>
               <p>
@@ -130,8 +129,8 @@
               </p>
             </div>
             <div id="form">
-              <input type="text" placeholder="Your email adress" />
-              <button>Subscribe</button>
+              <input type="text" placeholder="Your email address" />
+              <button class="normal">Subscribe</button>
             </div>
           </section>
   
@@ -189,5 +188,6 @@
           </section>
         </main>
       </div>
+     <script src="script.js"></script>
 </body>
 </html>
