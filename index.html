@@ -8,17 +8,19 @@
       src="https://kit.fontawesome.com/323f6020a6.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="home">
     <div class="main-container">
       <!-- Header -->
-      <section id="header">
+      <section id="header-home">
         <div class="logocenter">
           <a href="index.html">
             <img
               src="https://i.postimg.cc/9Qn1bsb2/logo.png"
-              class="logo" alt="vogueish-logo"/>
+              class="logo"
+              alt="vogueish-logo"
+            />
           </a>
         </div>
         <div>
@@ -31,12 +33,70 @@
             <li>
               <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             </li>
+            <li>
+                <button class="btnlogginpopup">Login</button>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- Main section -->
       <main>
+        <!-- Login And Signup Forms -->
+        <div class="wrapper">
+          <span class="icon-close"><ion-icon name="close"></ion-icon> </span>
+
+          <div class="form-box-login">
+            <h3>Login</h3>
+            <form action="#">
+              <div class="input-box">
+                <span class="icons"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+              </div>
+              <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn">Login</button>
+              <div class="login-register">
+                <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="form-box-register">
+            <h3>Registration</h3>
+            <form action="#">
+              <div class="input-box">
+                <span class="icons"><ion-icon name="person"></ion-icon></span>
+                <input type="text" required>
+                <label>Username</label>
+              </div>
+              <div class="input-box">
+                <span class="icons"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+              </div>
+              <div class="remember-forget">
+                <label><input type="checkbox" required>I agree to the terms & conditions</label>
+              </div>
+              <button type="submit" class="btn">Register</button>
+              <div class="login-register">
+                <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- Hero -->
         <section id="hero">
           <h4>Timeless Elegance</h4>
@@ -46,310 +106,11 @@
             <button type="submit">SHOP NOW</button>
           </form>
         </section>
-
-        <!-- Gallery 1 section -->
-        <section id="gallery-one-origin">
-          <section id="gallery-one" class="section-p1">
-            <h2>Featured Products</h2>
-            <p>Women's Collection from SHONDA. New, Modern and Vogueish</p>
-            <div class="pro-container">
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/564x/66/89/1f/66891f0b980acc83a04ba22792787ef1.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                  <span>SHONDA</span>
-                  <h5>Knit dress in caramel color</h5>
-                  <div class="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    </div>
-                        <h4>$45</h4>
-                          <div class="cart">
-                              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                          </div>
-                    </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/564x/89/47/ee/8947ee21dd98b8ab2ea8afcb4ec3677c.jpg"
-                  alt="featured-product"
-                />
-              
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>
-                  Sexy Prom Dresses Straps Satin Prom Dress Birthday Outfits
-                </h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$16.58</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/564x/ae/e8/6d/aee86d1760f75491bb38cc6a2f5d8827.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>Women's Sweater Maxi Dress in Cognac Brown</h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$50</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/736x/e1/ef/ae/e1efaeee35955566c10185d5d098d5fd.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>High Waist Flap Pocket Cargo Jeans</h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$35</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/736x/d7/14/95/d7149561a90c3b920dffe0beabd025a7.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>
-                  Men's contrast colored embroided button up short sleeved shirt
-                  and pant
-                </h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$40</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/564x/ad/8a/a2/ad8aa2750214cb2a5871a90525467f78.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>Men's button up long sleeved shirt</h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$5</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/736x/fe/9a/89/fe9a8994dbd66b7e64393713dd29a0eb.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>Men's knit polo</h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$10</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-              <div class="pro">
-                <img id="img"
-                  src="https://i.pinimg.com/564x/cf/97/04/cf9704b9bb1f1ab3ca4e083bf9c3bc22.jpg"
-                  alt="featured-product"
-                />
-               <div class="des">
-                <span>SHONDA</span>
-                <h5>Men's two-piece sweater and cargo pant set</h5>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <h4>$30</h4>
-                <div class="cart">
-                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <form action="shop.html">
-              <button type="submit" class="white">SHOP NOW</button>
-            </form>
-          </section>
-        </section>
-
-        <!-- Banner Section -->
-        <section id="banner" class="section-m1">
-          <h2>
-            Up to <span>50% OFF</span> on SHONDA's..
-          </h2>
-          <h4> 2024 Summer Collection</h4>
-          <form action="shop.html">
-            <button type="submit" class="normal">Explore More</button>
-          </form>
-        </section>
-        <!-- Feature Cards Section -->
-        <section id="feature_cards">
-          <section id="sm-banner" class="section-p1">
-            <div class="sm-banner banner-box1">
-              <h4>Crazy deals</h4>
-              <h2>Buy 1 get 1 free</h2>
-              <span>Step into your VOGUE era with SHONDA</span>
-              <form action="shop.html">
-                <button type="submit" class="white">Collection</button>
-              </form>
-            </div>
-            <div class="sm-banner banner-box2">
-              <h4>Spring/Summer</h4>
-              <h2>Upcoming Season</h2>
-              <span>Helpful tips for styling</span>
-              <form action="blog.html">
-                <button type="submit" class="white">Learn More</button>
-              </form>
-            </div>
-          </section>
-          <section id="banner3">
-            <div class="banner-box">
-              <h2>SEASONAL SALE</h2>
-              <h3>Winter Collection 30% OFF</h3>
-            </div>
-            <div class="banner-box banner-box2">
-              <h2>NEW JEWELRY COLLECTION</h2>
-              <h3>New designs for a Vogueish look</h3>
-            </div>
-            <div class="banner-box banner-box3">
-              <h2>DRESSES</h2>
-              <h3>Amazing deals for the season from SHONDA</h3>
-            </div>
-          </section>
-        </section>
-
-        <!-- Contact / Newletter Section -->
-        <section id="newsletter" class="section-p1 section-m1">
-          <div>
-            <h4>Sign Up For Newsletters</h4>
-            <p>
-              Get Email updates about our latest shop and
-              <span>special offers</span>.
-            </p>
-          </div>
-          <div id="form">
-            <input type="text" placeholder="Your email address" />
-            <button class="normal">Subscribe</button>
-          </div>
-        </section>
-
-        <!-- Footer Section -->
-        <section id="footer">
-          <div class="col">
-            <img class="logo"
-              src="https://i.postimg.cc/wBWv3wpw/VOGUEISH.png"
-              alt="vogueish-logo"
-            />
-            <h4>Contact</h4>
-            <p>
-              <strong>Address:</strong> No4, 551South Presida Street, Lagos,
-              Nigeria.
-            </p>
-            <p>
-              <strong>Phone:</strong> (+234) 905 678 9100 / (+234) 805 678 9100
-            </p>
-            <p><strong>Email Address:</strong> vogueish@voguemail.com</p>
-            <p><strong>Hours:</strong> 08:00am-06:00pm. Mon-Sat</p>
-            <div class="follow">
-              <h4>Follow Us</h4>
-              <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-brands fa-youtube"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <h4>Company</h4>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Support</a>
-            <a href="#">Inquiries & booking</a>
-          </div>
-          <div class="col">
-            <h4>Legal</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-          </div>
-          <div class="col">
-            <h4>Quick links</h4>
-            <a href="#">Order tracking</a>
-            <a href="#">Size guide</a>
-            <a href="#">Payments</a>
-            <a href="#">FAQs</a>
-          </div>
-          <div class="copyright">
-            <p>© 2024, Vogueish</p>
-            <p>All rights Reserved</p>
-          </div>
-        </section>
       </main>
     </div>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
 
